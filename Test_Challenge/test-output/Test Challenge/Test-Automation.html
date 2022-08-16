@@ -1,0 +1,384 @@
+<html>
+<head>
+<title>TestNG:  Test-Automation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test-Automation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 16 17:58:50 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>69 seconds (69020 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tests.TargetValidateTest.testVerifyClicksValidTargetAndBattleDialogClosed()'><b>testVerifyClicksValidTargetAndBattleDialogClosed</b><br>Test class: com.tests.TargetValidateTest<br/>
+<a href="#Output-1594600318" onClick='toggleBox("Output-1594600318", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1594600318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1594600318">
+Clicked Let the Battle Begin Button<br/>
+Clicked Valid Target Orange<br/>
+Battle Dialog Display = false<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.tests.TargetValidateTest@429bd883</td></tr>
+<tr>
+<td title='com.tests.TargetValidateTest.testVerifyPopupNotClosingWhenHitEscape()'><b>testVerifyPopupNotClosingWhenHitEscape</b><br>Test class: com.tests.TargetValidateTest<br/>
+<a href="#Output-3037451" onClick='toggleBox("Output-3037451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3037451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3037451">
+Clicked Let the Battle Begin Button<br/>
+Hit the Escape Key<br/>
+Battle Dialog Display = true<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tests.TargetValidateTest@429bd883</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfBothValuesBlank()'><b>testVerifyResultIfBothValuesBlank</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-2068100669" onClick='toggleBox("Output-2068100669", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2068100669" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2068100669">
+Entered Vlaue 1 =  and Value 2 = <br/>
+Result = 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfBothValuesDecimal()'><b>testVerifyResultIfBothValuesDecimal</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-1242427797" onClick='toggleBox("Output-1242427797", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1242427797" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1242427797">
+Entered Vlaue 1 = 1.6345 and Value 2 = 13.6<br/>
+Result = 15.2345<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfBothValuesPositive()'><b>testVerifyResultIfBothValuesPositive</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-2004628751" onClick='toggleBox("Output-2004628751", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2004628751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2004628751">
+Entered Vlaue 1 = 14 and Value 2 = 1000<br/>
+Result = 1014<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfCalculatingLongIntegerValues()'><b>testVerifyResultIfCalculatingLongIntegerValues</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-293667566" onClick='toggleBox("Output-293667566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-293667566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-293667566">
+Entered Vlaue 1 = 1200000000012345 and Value 2 = 100000000000000<br/>
+Result = 1300000000012345<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfFirstValueDecimalAndSecondValueInteger()'><b>testVerifyResultIfFirstValueDecimalAndSecondValueInteger</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-1492156162" onClick='toggleBox("Output-1492156162", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1492156162" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1492156162">
+Entered Vlaue 1 = 1.34 and Value 2 = 111<br/>
+Result = 112.34<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfFirstValueIntegerAndSecondValueDecimal()'><b>testVerifyResultIfFirstValueIntegerAndSecondValueDecimal</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-1350377659" onClick='toggleBox("Output-1350377659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1350377659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1350377659">
+Entered Vlaue 1 = 1 and Value 2 = 13.6<br/>
+Result = 14.6<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfFirstValueNegative()'><b>testVerifyResultIfFirstValueNegative</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-426070939" onClick='toggleBox("Output-426070939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-426070939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-426070939">
+Entered Vlaue 1 = -14 and Value 2 = 134<br/>
+Result = 120<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfFirstValuesBlank()'><b>testVerifyResultIfFirstValuesBlank</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-278879704" onClick='toggleBox("Output-278879704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-278879704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-278879704">
+Entered Vlaue 1 =  and Value 2 = 5<br/>
+Result = 5<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfSecondValueNegative()'><b>testVerifyResultIfSecondValueNegative</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-278753868" onClick='toggleBox("Output-278753868", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-278753868" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-278753868">
+Entered Vlaue 1 = 14 and Value 2 = -134<br/>
+Result = -120<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.SummationTest.testVerifyResultIfSecondValues_Blank()'><b>testVerifyResultIfSecondValues_Blank</b><br>Test class: com.tests.SummationTest<br/>
+<a href="#Output-1612496268" onClick='toggleBox("Output-1612496268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1612496268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1612496268">
+Entered Vlaue 1 = 6 and Value 2 = <br/>
+Result = 6<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.SummationTest@6591f517</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameNotReturnedIfEntirelyInvalidTextEntered()'><b>testVerifyUnicornNameNotReturnedIfEntirelyInvalidTextEntered</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-747152360" onClick='toggleBox("Output-747152360", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747152360" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747152360">
+Entered Search Text = abcd <br/>
+Failed to Get Result Unicorn Name<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameNotReturnedIfNoNameEntered()'><b>testVerifyUnicornNameNotReturnedIfNoNameEntered</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-548093498" onClick='toggleBox("Output-548093498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-548093498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-548093498">
+Entered Search Text = <br/>
+Failed to Get Result Unicorn Name<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameNotReturnedIfPartOfNameEnteredWithSpaces()'><b>testVerifyUnicornNameNotReturnedIfPartOfNameEnteredWithSpaces</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-1127434428" onClick='toggleBox("Output-1127434428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1127434428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1127434428">
+Entered Search Text = bobi <br/>
+Failed to Get Result Unicorn Name<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameNotReturnedIfPartOfNamePartiallyEntered()'><b>testVerifyUnicornNameNotReturnedIfPartOfNamePartiallyEntered</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-1397516135" onClick='toggleBox("Output-1397516135", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1397516135" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1397516135">
+Entered Search Text = Bob<br/>
+Failed to Get Result Unicorn Name<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameNotReturnedIfTextContainsEnteredPartOfName()'><b>testVerifyUnicornNameNotReturnedIfTextContainsEnteredPartOfName</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-185939155" onClick='toggleBox("Output-185939155", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-185939155" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-185939155">
+Entered Search Text = bobii<br/>
+Failed to Get Result Unicorn Name<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameReturnedIfPartOfNameEnteredAllCaps()'><b>testVerifyUnicornNameReturnedIfPartOfNameEnteredAllCaps</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-1649884294" onClick='toggleBox("Output-1649884294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1649884294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1649884294">
+Entered Search Text = BOBI<br/>
+Unicorn Name Returned = true<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameReturnedIfPartOfNameEnteredLowerCase()'><b>testVerifyUnicornNameReturnedIfPartOfNameEnteredLowerCase</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-1404612586" onClick='toggleBox("Output-1404612586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1404612586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1404612586">
+Entered Search Text = bobi<br/>
+Unicorn Name Returned = true<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.UnicornSearchTest.testVerifyUnicornNameReturnedIfPartOfNameEnteredSentenceCaps()'><b>testVerifyUnicornNameReturnedIfPartOfNameEnteredSentenceCaps</b><br>Test class: com.tests.UnicornSearchTest<br/>
+<a href="#Output-20084184" onClick='toggleBox("Output-20084184", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20084184" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20084184">
+Entered Search Text = Bobi<br/>
+Unicorn Name Returned = true<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.UnicornSearchTest@345965f2</td></tr>
+<tr>
+<td title='com.tests.TargetValidateTest.testVerifyUser_Clicks_Invalid_Target()'><b>testVerifyUser_Clicks_Invalid_Target</b><br>Test class: com.tests.TargetValidateTest<br/>
+<a href="#Output-2000851008" onClick='toggleBox("Output-2000851008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2000851008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000851008">
+Clicked Let the Battle Begin Button<br/>
+Clicked Invalid Target Not Orange<br/>
+Battle Dialog Display = true<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.tests.TargetValidateTest@429bd883</td></tr>
+<tr>
+<td title='com.tests.TargetValidateTest.testVerifyValidTargetAlwaysChangesItsPosition()'><b>testVerifyValidTargetAlwaysChangesItsPosition</b><br>Test class: com.tests.TargetValidateTest<br/>
+<a href="#Output-1251133097" onClick='toggleBox("Output-1251133097", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1251133097" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1251133097">
+Clicked Let the Battle Begin Button<br/>
+Valid Target Position = 3<br/>
+Clicked Let the Battle Begin Button<br/>
+Valid Target Position = 4<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.tests.TargetValidateTest@429bd883</td></tr>
+<tr>
+<td title='com.tests.TargetValidateTest.tetsVerifyUserCanSeeBattleDialogWithOneValidAndOtherTargets()'><b>tetsVerifyUserCanSeeBattleDialogWithOneValidAndOtherTargets</b><br>Test class: com.tests.TargetValidateTest<br/>
+<a href="#Output-1674938191" onClick='toggleBox("Output-1674938191", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1674938191" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1674938191">
+Clicked Let the Battle Begin Button<br/>
+Invalid Target Count = 8<br/>
+Valid Target Count = 1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tests.TargetValidateTest@429bd883</td></tr>
+</table><p>
+</body>
+</html>
